@@ -12,7 +12,11 @@ This is an implementation of the ACMMM2023 paper.
 Run the Matlab code to obtain the clean and glow pairs:
 ```
 APSF_GLOW_RENDER_CODE/synthetic_glow_pairs.m
-```
+````
+Change the data path `nighttime_dehaze/paired_data/clean_data/`, <br>
+the paired clean and glow results are saved in `nighttime_dehaze/paired_data/clean/` and `nighttime_dehaze/paired_data/glow/`, <br>
+the visualization of light source maps are in `nighttime_dehaze/paired_data/glow_render_visual/light_source/`.
+
 <p align="left">
   <img width=650" src="teaser/APSF1.png">
 </p>
