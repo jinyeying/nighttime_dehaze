@@ -6,7 +6,7 @@ addpath(genpath('./function'));
 reH = 256; reW = 320;
 addnoise = true;
 
-data_from = 'D:\Dropbox\nighttime\ACMMM23\paired_data\clean\';
+data_from = 'D:\Dropbox\nighttime\ACMMM23\paired_data\clean_data\';
 data_root = 'D:\Dropbox\nighttime\ACMMM23\paired_data\';
 
 path_clean = [data_root '/clean']; if ~exist(path_clean,'dir'), mkdir(path_clean); end
@@ -81,6 +81,7 @@ fprintf(fid_degrad,sprintf('/glow/%06d.png\n',clean_list(iid).name));
 ls_loc = fullfile(path_ls,clean_list(iid).name);
 pair_loc = fullfile(path_pairs,clean_list(iid).name);
 
+imwrite(clean_img,clean_loc);
 imwrite(I,degrad_loc);
 imwrite(light_sources,ls_loc);
 imwrite([clean_img I],pair_loc)

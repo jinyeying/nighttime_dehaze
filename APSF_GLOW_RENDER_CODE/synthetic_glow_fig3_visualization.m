@@ -1,7 +1,7 @@
 clc; clear; close all;
 addpath(genpath('./function'));
 
-clean_root = 'D:\Dropbox\nighttime\ACMMM23\paired_data\clean\';
+clean_root = 'D:\Dropbox\nighttime\ACMMM23\paired_data\clean_data\';
 
 %% clean image
 image_name = '000438.png'; 
