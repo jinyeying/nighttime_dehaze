@@ -5,7 +5,7 @@
 This is an implementation of the ACMMM2023 paper.
 > [Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution.]\
 > ACM International Conference on Multimedia (`ACMMM2023`)\
->[Yeying Jin](https://jinyeying.github.io/), Beibei Lin, Wending Yan, Wei Ye, Yuan Yuan and [Robby T. Tan](https://tanrobby.github.io/pub.html)
+>[Yeying Jin*](https://jinyeying.github.io/), Beibei Lin*, Wending Yan, Wei Ye, Yuan Yuan and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 >
 
 ## APSF-Guided Nighttime Glow Rendering
