@@ -6,7 +6,13 @@ This is an implementation of the ACMMM2023 paper.
 > [Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution.]\
 > ACM International Conference on Multimedia (`ACMMM2023`)\
 >[Yeying Jin*](https://jinyeying.github.io/), Beibei Lin*, Wending Yan, Wei Ye, Yuan Yuan and [Robby T. Tan](https://tanrobby.github.io/pub.html)
->
+
+## [Results on the Synthetic Benchmark:](https://www.dropbox.com/scl/fi/jqv405gx03rebym8d959w/0_ACMMM23_RESULTS.zip?rlkey=b61k1a903c0ogk7skapyf1m2l&dl=0)
+## Evaluation: 
+Set the dataset_name 'NHM' or 'NHR' or 'NHC' 
+```
+python calculate_psnr_ssim_NH.py
+```
 
 ## APSF-Guided Nighttime Glow Rendering
 Run the Matlab code to obtain the clean and glow pairs:
@@ -37,3 +43,5 @@ APSF and Alpha Matting are the implementations of the papers:<br>
 *Shedding Light on the Weather* [[Paper](https://cave.cs.columbia.edu/old/publications/pdfs/Narasimhan_CVPR03.pdf)]
 * `CVPR06`
 *A Closed-Form Solution to Natural Image Matting* [[Paper](https://people.csail.mit.edu/alevin/papers/Matting-Levin-Lischinski-Weiss-CVPR06.pdf)]
+
+
