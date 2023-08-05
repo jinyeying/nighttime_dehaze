@@ -15,7 +15,7 @@ We provide 440 night hazy images.
 2. [Internet_night_clean1](https://www.dropbox.com/sh/izex781w18efhqm/AACu8RJsyRVGNOVVTt3X-0HDa?dl=0)
 We provide 411 night clean images.  
 3. [Internet_night_clean2](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0)
-We provide 50 clean night images, which are reference images for glow removal.
+We provide 50 clean night images, reference images for glow removal.
 
 ## Synthetic Nighttime Haze and Clean Ground Truth 
 4. [GTA5 nighttime fog](https://www.dropbox.com/sh/gfw44ttcu5czrbg/AACr2GZWvAdwYPV0wgs7s00xa?dl=0) <br>
