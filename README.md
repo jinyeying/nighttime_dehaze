@@ -9,13 +9,20 @@ This is an implementation of the ACMMM2023 GAPSF paper.
 
 >[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.01738)
 
-## Real-world Nighttime Haze and  
+## Real-world Nighttime Haze and Clean Reference 
 1. [RealNightHaze](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0)
 We provide 440 night hazy images.
 2. [Internet_night_clean1](https://www.dropbox.com/sh/izex781w18efhqm/AACu8RJsyRVGNOVVTt3X-0HDa?dl=0)
 We provide 411 night clean images.  
-4. [Internet_night_clean2](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0)
+3. [Internet_night_clean2](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0)
 We provide 50 clean night images, which are reference images for glow removal.
+
+## Synthetic Nighttime Haze and Clean Ground Truth 
+4. [GTA5 nighttime fog](https://www.dropbox.com/sh/gfw44ttcu5czrbg/AACr2GZWvAdwYPV0wgs7s00xa?dl=0) <br>
+* `ECCV2020`
+*Nighttime Defogging Using High-Low Frequency Decomposition and Grayscale-Color Networks* [[Paper]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570460.pdf)\
+Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Dai](https://vas.mpi-inf.mpg.de/) 
+
 
 ## APSF-Guided Nighttime Glow Rendering
 Run the Matlab code to obtain the clean and glow pairs:
@@ -71,6 +78,17 @@ If this work is useful for your research, please cite our paper.
       eprint={2308.01738},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+```
+If GTA5 nighttime fog data is useful for your research, please cite the paper. 
+```BibTeX
+@inproceedings{yan2020nighttime,
+	title={Nighttime defogging using high-low frequency decomposition and grayscale-color networks},
+	author={Yan, Wending and Tan, Robby T and Dai, Dengxin},
+	booktitle={European Conference on Computer Vision},
+	pages={473--488},
+	year={2020},
+	organization={Springer}
 }
 ```
 
