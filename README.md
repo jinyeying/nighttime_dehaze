@@ -2,26 +2,20 @@
 [ACMMM2023] "Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution"
 
 ## Introduction
-This is an implementation of the ACMMM2023 paper.
+This is an implementation of the ACMMM2023 GAPSF paper.
 > [Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution](https://arxiv.org/abs/2308.01738)\
 > ACM International Conference on Multimedia (`ACMMM2023`)\
 >[Yeying Jin*](https://jinyeying.github.io/), Beibei Lin*, Wending Yan, Wei Ye, Yuan Yuan and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 >[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.01738)
 
-## [Results on the Synthetic Benchmark:](https://www.dropbox.com/scl/fi/jqv405gx03rebym8d959w/0_ACMMM23_RESULTS.zip?rlkey=b61k1a903c0ogk7skapyf1m2l&dl=0)
-We provide the visualization results in `0_ACMMM23_RESULTS/NHR/index.html`, inside the directory `0_ACMMM23_RESULTS/NHR/img_0/` are hazy inputs, `0_ACMMM23_RESULTS/NHR/img_1/` are ground truths, `0_ACMMM23_RESULTS/NHR/img_2/` are our results. For results corresponding to 'NHM' or 'NHC', please refer to the respective directories.
-
-## Evaluation: 
-Set the dataset_name 'NHR' or 'NHM' or 'NHC', and Run the Python code:
-```
-python calculate_psnr_ssim_NH.py
-```
-| Dataset | PSNR | SSIM | 
-|--------|------|------ |
-| NHR | **27.33** |**0.93**|
-| NHM | **34.73** |**0.94**|
-| NHC | **39.23** |**0.98**|
+## Real-world Nighttime Haze and  
+1. [RealNightHaze](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0)
+We provide 440 night hazy images.
+2. [Internet_night_clean1](https://www.dropbox.com/sh/izex781w18efhqm/AACu8RJsyRVGNOVVTt3X-0HDa?dl=0)
+We provide 411 night clean images.  
+4. [Internet_night_clean2](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0)
+We provide 50 clean night images, which are reference images for glow removal.
 
 ## APSF-Guided Nighttime Glow Rendering
 Run the Matlab code to obtain the clean and glow pairs:
@@ -52,6 +46,20 @@ APSF and Alpha Matting are the implementations of the papers:<br>
 *Shedding Light on the Weather* [[Paper](https://cave.cs.columbia.edu/old/publications/pdfs/Narasimhan_CVPR03.pdf)]
 * `CVPR06`
 *A Closed-Form Solution to Natural Image Matting* [[Paper](https://people.csail.mit.edu/alevin/papers/Matting-Levin-Lischinski-Weiss-CVPR06.pdf)]
+
+## [Results on the Synthetic Benchmark:](https://www.dropbox.com/scl/fi/jqv405gx03rebym8d959w/0_ACMMM23_RESULTS.zip?rlkey=b61k1a903c0ogk7skapyf1m2l&dl=0)
+We provide the visualization results in `0_ACMMM23_RESULTS/NHR/index.html`, inside the directory `0_ACMMM23_RESULTS/NHR/img_0/` are hazy inputs, `0_ACMMM23_RESULTS/NHR/img_1/` are ground truths, `0_ACMMM23_RESULTS/NHR/img_2/` are our results. For results corresponding to 'NHM' or 'NHC', please refer to the respective directories.
+
+## Evaluation: 
+Set the dataset_name 'NHR' or 'NHM' or 'NHC', and Run the Python code:
+```
+python calculate_psnr_ssim_NH.py
+```
+| Dataset | PSNR | SSIM | 
+|--------|------|------ |
+| NHR | **26.56** |**0.89**|
+| NHM | **33.76** |**0.92**|
+| NHC | **38.86** |**0.97**|
 
 ### Citation
 If this work is useful for your research, please cite our paper. 
