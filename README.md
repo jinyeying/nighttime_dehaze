@@ -54,8 +54,10 @@ APSF and Alpha Matting are the implementations of the papers:<br>
 * `CVPR06`
 *A Closed-Form Solution to Natural Image Matting* [[Paper](https://people.csail.mit.edu/alevin/papers/Matting-Levin-Lischinski-Weiss-CVPR06.pdf)]
 
-## [Results on the Synthetic Benchmark:](https://www.dropbox.com/scl/fi/jqv405gx03rebym8d959w/0_ACMMM23_RESULTS.zip?rlkey=b61k1a903c0ogk7skapyf1m2l&dl=0)
-We provide the visualization results in `0_ACMMM23_RESULTS/NHR/index.html`, inside the directory `0_ACMMM23_RESULTS/NHR/img_0/` are hazy inputs, `0_ACMMM23_RESULTS/NHR/img_1/` are ground truths, `0_ACMMM23_RESULTS/NHR/img_2/` are our results. For results corresponding to 'NHM' or 'NHC', please refer to the respective directories.
+## [Results on the Synthetic Benchmark:](https://www.dropbox.com/sh/itopl02tpv1sda9/AABx1QJVtA9wbPoNVU65r584a?dl=0)
+We provide the visualization results in `0_ACMMM23_RESULTS/NHR/index.html`, inside the directory `0_ACMMM23_RESULTS/NHR/img_0/` are hazy inputs, `0_ACMMM23_RESULTS/NHR/img_1/` are ground truths, `0_ACMMM23_RESULTS/NHR/img_2/` are our results. 
+
+For results corresponding to `GTA5`, `NHM` or `NHC`, please refer to the respective directories.
 
 ## Evaluation: 
 Set the dataset_name 'NHR' or 'NHM' or 'NHC', and Run the Python code:
@@ -64,6 +66,7 @@ python calculate_psnr_ssim_NH.py
 ```
 | Dataset | PSNR | SSIM | 
 |--------|------|------ |
+| GTA5| **30.383** |**0.9042**|
 | NHR | **26.56** |**0.89**|
 | NHM | **33.76** |**0.92**|
 | NHC | **38.86** |**0.97**|
