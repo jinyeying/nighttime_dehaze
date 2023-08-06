@@ -62,7 +62,7 @@ For results corresponding to `GTA5`, `NHM` or `NHC`, please refer to the respect
 ## Evaluation: 
 Set the dataset_name 'NHR' or 'NHM' or 'NHC', and Run the Python code:
 ```
-python calculate_psnr_ssim_NH.py
+python calculate_psnr_ssim_NH_GTA5.py
 ```
 | Dataset | PSNR | SSIM | 
 |--------|------|------ |
