@@ -25,13 +25,13 @@ Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Da
 
 
 ## APSF-Guided Nighttime Glow Rendering
-Run the Matlab code to obtain the clean and glow pairs:
+Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/APSF_GLOW_RENDER_CODE/synthetic_glow_pairs.m) to obtain the clean and glow pairs:
 ```
 APSF_GLOW_RENDER_CODE/synthetic_glow_pairs.m
 ````
 Change the data path `nighttime_dehaze/paired_data/clean_data/`, <br>
-the paired clean and glow results are saved in `nighttime_dehaze/paired_data/clean/` and `nighttime_dehaze/paired_data/glow/`, <br>
-the visualization of light source maps are in `nighttime_dehaze/paired_data/glow_render_visual/light_source/`.
+the `paired clean and glow results` are saved in [nighttime_dehaze/paired_data/clean/](https://github.com/jinyeying/nighttime_dehaze/tree/main/paired_data/clean) and [nighttime_dehaze/paired_data/glow/](https://github.com/jinyeying/nighttime_dehaze/tree/main/paired_data/glow), <br>
+the visualization of `light source maps` are in [nighttime_dehaze/paired_data/glow_render_visual/light_source/](https://github.com/jinyeying/nighttime_dehaze/tree/main/paired_data/glow_render_visual/light_source).
 
 <p align="left">
   <img width=650" src="teaser/APSF1.png">
@@ -40,7 +40,7 @@ the visualization of light source maps are in `nighttime_dehaze/paired_data/glow
   <img width=650" src="teaser/APSF2.png">
 </p>
 
-Run the Matlab code to visualize the Fig.3 in the main paper:
+Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/APSF_GLOW_RENDER_CODE/synthetic_glow_fig3_visualization.m) to visualize the Fig.3 in the main paper:
 ```
 APSF_GLOW_RENDER_CODE/synthetic_glow_fig3_visualization.m
 ```
@@ -60,7 +60,7 @@ We provide the visualization results in `0_ACMMM23_RESULTS/NHR/index.html`, insi
 For results corresponding to `GTA5`, `NHM` or `NHC`, please refer to the respective directories.
 
 ## Evaluation: 
-Set the dataset_name 'NHR' or 'NHM' or 'NHC', and Run the Python code:
+Set the dataset_name `GTA5` or `NHR` or `NHM` or `NHC`, and run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/0_ACMMM23_RESULTS/calculate_psnr_ssim_NH_GTA5.py):
 ```
 python calculate_psnr_ssim_NH_GTA5.py
 ```
