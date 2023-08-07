@@ -23,6 +23,19 @@ We provide 50 clean night images, reference images for glow removal.
 *Nighttime Defogging Using High-Low Frequency Decomposition and Grayscale-Color Networks* [[Paper]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570460.pdf)\
 Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Dai](https://vas.mpi-inf.mpg.de/) 
 
+## Nighttime Dehazing Test Code
+For the real nighttime haze, set the dataset path to `Internet_night_fog`, and run the [Python code]
+```
+CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset dehaze --datasetpath /diskc/yeying/night_dehaze/dataset/Internet_night_fog/
+```
+
+For the synthetic dataset, set the dataset path to `GTA5` or `NHR` or `NHM` or `NHC`, and run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/main_test.py)
+```
+CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset NHM --datasetpath /diskc/yeying/night_dehaze/dataset/middlebury/testA/ 
+CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset NHC --datasetpath /diskc/yeying/night_dehaze/dataset/Cityscape/testA/ 
+CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset NHR --datasetpath /diskc/yeying/night_dehaze/dataset/NHR/testA/ 
+CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset GTA5 --datasetpath /diskc/yeying/night_dehaze/GTA5/testA/
+```
 
 ## APSF-Guided Nighttime Glow Rendering
 Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/APSF_GLOW_RENDER_CODE/synthetic_glow_pairs.m) to obtain the clean and glow pairs:
