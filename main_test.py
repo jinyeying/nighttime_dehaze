@@ -1,4 +1,4 @@
-from DEGLOW_test import UGATIT
+from DEGLOW_test import GAPSF
 import argparse
 from utils import *
 
@@ -29,7 +29,7 @@ def main():
     if args is None:
       exit()
 
-    gan = UGATIT(args)
+    gan = GAPSF(args)
     gan.build_model()
 
     if args.phase == 'test' :

@@ -13,7 +13,7 @@ IMG_EXTENSIONS = [
     '.png', '.PNG', '.ppm', '.PPM', '.bmp', '.BMP',
 ]
 
-class UGATIT(object) :
+class GAPSF(object) :
     def __init__(self, args):        
         self.result_dir = args.result_dir
         self.dataset = args.dataset
