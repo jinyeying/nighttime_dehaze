@@ -1,5 +1,4 @@
 from DEGLOW_test import UGATIT
-#from ref_test import UGATIT
 import argparse
 from utils import *
 
