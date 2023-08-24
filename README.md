@@ -102,14 +102,13 @@ python calculate_psnr_ssim_NH_GTA5.py
 ### Citation
 If this work or the Internet data is useful for your research, please cite our paper. 
 ```BibTeX
-@misc{jin2023enhancing,
-      title={Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution}, 
-      author={Yeying Jin and Beibei Lin and Wending Yan and Wei Ye and Yuan Yuan and Robby T. Tan},
-      year={2023},
-      eprint={2308.01738},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{jin2023enhancing,
+  title={Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution},
+  author={Jin, Yeying and Lin, Beibei and Yan, Wending and Ye, Wei and Yuan, Yuan and Tan, Robby T},
+  journal={arXiv preprint arXiv:2308.01738},
+  year={2023}
 }
+
 ```
 If GTA5 nighttime fog data is useful for your research, please cite the paper. 
 ```BibTeX
