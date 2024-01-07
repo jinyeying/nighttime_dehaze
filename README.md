@@ -99,7 +99,14 @@ python calculate_psnr_ssim_NH_GTA5.py
 | NHM | **33.76** |**0.92**|
 | NHC | **38.86** |**0.97**|
 
-### Citation
+## License
+The code and models in this repository are licensed under the MIT License for academic and other non-commercial uses.<br>
+For commercial use of the code and models, separate commercial licensing is available. Please contact:
+- Yeying Jin (jinyeying@u.nus.edu)
+- Robby T. Tan (tanrobby@gmail.com)
+- Jonathan Tan (jonathan_tano@nus.edu.sg)
+
+## Citation
 If this work or the Internet data is useful for your research, please cite our paper. 
 ```BibTeX
 @inproceedings{jin2023enhancing,
