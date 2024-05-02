@@ -1,13 +1,22 @@
 # nighttime_dehaze (ACMMM'2023)
-[ACMMM2023] "Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution"
 
 ## Introduction
-This is an implementation of the ACM'MM2023 APSF paper.
 > [Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution](https://arxiv.org/abs/2308.01738)\
 > ACM International Conference on Multimedia (`ACMMM2023`)\
->[Yeying Jin*](https://jinyeying.github.io/), Beibei Lin*, Wending Yan, Yuan Yuan, Wei Ye, and [Robby T. Tan](https://tanrobby.github.io/pub.html)
+>[Yeying Jin*](https://jinyeying.github.io/), [Beibei Lin*](https://bb12346.github.io/), Wending Yan, Yuan Yuan, Wei Ye, and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 >[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.01738)
+
+## Prerequisites
+```
+git clone https://github.com/jinyeying/nighttime_dehaze.git
+cd nighttime_dehaze/
+conda create -n dehaze python=3.7
+conda activate dehaze
+conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3 -c pytorch
+python3 -m pip install scipy==1.7.3
+python3 -m pip install opencv-python==4.4.0.46
+```
 
 ## 1. Real-world Nighttime Haze and Clean Reference Data
 1. [RealNightHaze](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0)
@@ -21,7 +30,7 @@ We provide 50 clean night images, serve as reference images for glow removal.
 4. [GTA5 nighttime fog](https://www.dropbox.com/sh/gfw44ttcu5czrbg/AACr2GZWvAdwYPV0wgs7s00xa?dl=0) <br>
 * `ECCV2020`
 *Nighttime Defogging Using High-Low Frequency Decomposition and Grayscale-Color Networks* [[Paper]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570460.pdf)\
-Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Dai](https://vas.mpi-inf.mpg.de/) 
+Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Dai](https://vas.mpi-inf.mpg.de/)
 
 ## 3. Nighttime Dehazing Test Code
 ### 3.1 For the [RealNightHaze](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0) | [Results](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0), 
@@ -126,15 +135,5 @@ If this work or the Internet data is useful for your research, please cite our p
   organization={Springer}
 }
 ```
-If GTA5 nighttime fog data is useful for your research, please cite the paper. 
-```BibTeX
-@inproceedings{yan2020nighttime,
-	title={Nighttime defogging using high-low frequency decomposition and grayscale-color networks},
-	author={Yan, Wending and Tan, Robby T and Dai, Dengxin},
-	booktitle={European Conference on Computer Vision},
-	pages={473--488},
-	year={2020},
-	organization={Springer}
-}
-```
+
 
