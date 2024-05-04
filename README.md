@@ -19,15 +19,13 @@ python3 -m pip install opencv-python==4.4.0.46
 ```
 
 ## 1. Real-world Nighttime Haze and Clean Reference Data
-1. [RealNightHaze](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0)
-We provide 440 night hazy images.
-2. [Internet_night_clean1](https://www.dropbox.com/sh/izex781w18efhqm/AACu8RJsyRVGNOVVTt3X-0HDa?dl=0)
-We provide 411 night clean images.  
-3. [Internet_night_clean2](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0)
-We provide 50 clean night images, serve as reference images for glow removal.
-
+| Data                | Dropbox                                                                             | BaiduPan                                                                     | Number |
+| :-----------------: | :---------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |:-----: | 
+|RealNightHaze        | [Dropbox](https://www.dropbox.com/sh/7qzmb3y9akejape/AABYf2ZAqn_5vmPsOPg7KqoMa?dl=0)| [BaiduPan](https://pan.baidu.com/s/11NFB-XXT4SEZcz0eFEajbg?pwd=r5mi) code:r5mi|443|
+|Internet_night_clean1|[Dropbox](https://www.dropbox.com/sh/izex781w18efhqm/AACu8RJsyRVGNOVVTt3X-0HDa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1km6GO_RPI3jVBlpAZECi0g?pwd=m7k1) code:m7k1|411|
+|Internet_night_clean2|[Dropbox](https://www.dropbox.com/sh/yj0jac9alsfrxzx/AACsDWYljCjHuFAQ4X1HCNcva?dl=0) | [BaiduPan](https://pan.baidu.com/s/1_Vt5T3m04xqvM9WiKMRuXw?pwd=8f13) code:8f13|50|
+|GTA5 nighttime fog   |[Dropbox](https://www.dropbox.com/sh/gfw44ttcu5czrbg/AACr2GZWvAdwYPV0wgs7s00xa?dl=0) | [BaiduPan](https://pan.baidu.com/s/1hW9wfVhvYbRaUdHbozOPbw?pwd=67ml) code:67ml|Train:787,Test:77|
 ## 2. Synthetic Nighttime Haze and Clean Ground Truth 
-4. [GTA5 nighttime fog](https://www.dropbox.com/sh/gfw44ttcu5czrbg/AACr2GZWvAdwYPV0wgs7s00xa?dl=0) <br>
 * `ECCV2020`
 *Nighttime Defogging Using High-Low Frequency Decomposition and Grayscale-Color Networks* [[Paper]](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123570460.pdf)\
 Wending Yan, [Robby T. Tan](https://tanrobby.github.io/pub.html) and [Dengxin Dai](https://vas.mpi-inf.mpg.de/)
