@@ -3,7 +3,7 @@
 ## Introduction
 > [Enhancing Visibility in Nighttime Haze Images Using Guided APSF and Gradient Adaptive Convolution](https://arxiv.org/abs/2308.01738)\
 > ACM International Conference on Multimedia (`ACMMM2023`)\
->[Yeying Jin*](https://jinyeying.github.io/), [Beibei Lin*](https://bb12346.github.io/), Wending Yan, Yuan Yuan, Wei Ye, and [Robby T. Tan](https://tanrobby.github.io/pub.html)
+>[Yeying Jin](https://jinyeying.github.io/), [Beibei Lin](https://bb12346.github.io/), Wending Yan, Yuan Yuan, Wei Ye, and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 >[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.01738)
 
@@ -95,7 +95,7 @@ the visualization of `light source maps` are in [nighttime_dehaze/paired_data/gl
   <img width=650" src="teaser/APSF2.png">
 </p>
 
-Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/APSF_GLOW_RENDER_CODE/synthetic_glow_fig3_visualization.m) to visualize the Fig.3 in the main paper:
+Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/APSF_GLOW_RENDER_CODE/synthetic_glow_fig3_visualization.m) to visualize Fig.3 in the main paper:
 ```
 APSF_GLOW_RENDER_CODE/synthetic_glow_fig3_visualization.m
 ```
@@ -108,6 +108,21 @@ APSF and Alpha Matting are the implementations of the papers:<br>
 *Shedding Light on the Weather* [[Paper](https://cave.cs.columbia.edu/old/publications/pdfs/Narasimhan_CVPR03.pdf)]
 * `CVPR06`
 *A Closed-Form Solution to Natural Image Matting* [[Paper](https://people.csail.mit.edu/alevin/papers/Matting-Levin-Lischinski-Weiss-CVPR06.pdf)]
+
+## Edge
+Run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/EDGE/main.py) to visualize Fig.6 in the main paper, the environment is Pytorch 1.9 with cuda 10.1 and cudnn 7.5,
+```
+conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=10.1 -c pytorch
+```
+```
+python main.py --sa --dil --gpu 1 --datadir ./Input/ --evaluate-converted
+```
+<p align="left">
+  <img width=550" src="teaser/edge_Fig6.png">
+</p>
+
+
+## Edge
 
 ## License
 The code and models in this repository are licensed under the MIT License for academic and other non-commercial uses.<br>
