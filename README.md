@@ -6,6 +6,7 @@
 >[Yeying Jin](https://jinyeying.github.io/), [Beibei Lin](https://bb12346.github.io/), Wending Yan, Yuan Yuan, Wei Ye, and [Robby T. Tan](https://tanrobby.github.io/pub.html)
 
 >[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.01738)
+>[[Paper]](https://dl.acm.org/doi/10.1145/3581783.3611884)
 
 ## Prerequisites
 ```
@@ -46,7 +47,7 @@ For results corresponding to `GTA5`, `NHM` or `NHC`, please refer to the respect
 
 * For the RealNightHaze Dataset
 1. Set the `datasetpath` to `RealNightHaze`,
-2. Download the checkpoint [dehaze.pt](https://www.dropbox.com/scl/fi/y634lpwli4u8dosn0o28r/dehaze.pt?rlkey=lmz1yjlga39somlfr6s0618q8&dl=0), put in [results/dehaze/model](https://github.com/jinyeying/nighttime_dehaze/tree/main/results/dehaze/model),
+2. Download the checkpoint dehaze.pt [Dropbox](https://www.dropbox.com/scl/fi/y634lpwli4u8dosn0o28r/dehaze.pt?rlkey=lmz1yjlga39somlfr6s0618q8&dl=0)| [BaiduPan](https://pan.baidu.com/s/1x0Enz-5wXC4Tzm-RXUTmlQ?pwd=n3t8) code:n3t8 put in [results/dehaze/model](https://github.com/jinyeying/nighttime_dehaze/tree/main/results/dehaze/model),
 3. Run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/main_test.py), results are in [results/dehaze/output](https://github.com/jinyeying/nighttime_dehaze/tree/main/results/dehaze/output).
 ```
 CUDA_VISIBLE_DEVICES=1 python main_test.py --dataset dehaze --datasetpath /diskc/yeying/night_dehaze/dataset/Internet_night_fog/
@@ -110,7 +111,7 @@ APSF and Alpha Matting are the implementations of the papers:<br>
 *A Closed-Form Solution to Natural Image Matting* [[Paper](https://people.csail.mit.edu/alevin/papers/Matting-Levin-Lischinski-Weiss-CVPR06.pdf)]
 
 ## Edge
-Run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/EDGE/main.py) to visualize Fig.6 in the main paper, the environment is Pytorch 1.9 with cuda 10.1 and cudnn 7.5,
+Run the [Python code](https://github.com/jinyeying/nighttime_dehaze/blob/main/EDGE/main.py) to visualize Fig.6, the environment is Pytorch 1.9 with cuda 10.1 and cudnn 7.5, results are in [EDGE/results](https://github.com/jinyeying/nighttime_dehaze/tree/main/EDGE/results).
 ```
 conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=10.1 -c pytorch
 ```
@@ -121,8 +122,17 @@ python main.py --sa --dil --gpu 1 --datadir ./Input/ --evaluate-converted
   <img width=550" src="teaser/edge_Fig6.png">
 </p>
 
+## Enhancement
+Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/ENHANCEMENT/get_texture_attention.m) to visualize Fig.8, results are in [ENHANCEMENT/attention_map](https://github.com/jinyeying/nighttime_dehaze/tree/main/ENHANCEMENT/attention_map).
+<p align="left">
+  <img width=550" src="teaser/attention_Fig8.png">
+</p>
 
-## Edge
+Run the [Matlab code](https://github.com/jinyeying/nighttime_dehaze/blob/main/ENHANCEMENT/get_fig10.m) to visualize Fig.10.
+<p align="left">
+  <img width=550" src="teaser/enhance_Fig10.png">
+</p>
+
 
 ## License
 The code and models in this repository are licensed under the MIT License for academic and other non-commercial uses.<br>
